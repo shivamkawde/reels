@@ -1,0 +1,39 @@
+.profileMainDiv{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.profileReel{
+    height: 51%;
+    width: 25%;
+    display: flex;
+    box-shadow: 1px 1px 5px grey;
+
+}
+.vdoProfile{
+    height: 100%;
+    width: 100%;
+}
+.proPic{
+    height: 10%;
+    width: 12%;
+}
+.proName{
+    position: absolute;
+    top: 2rem;
+}
+.photosLink{
+    position: absolute;
+    top: 7rem;
+
+}
+.reelsLink{
+    position: absolute;
+    top: 7rem;
+    left: 15rem;
+
+}
+.photosMainDiv{
+    position: absolute;
+    top: 17%;
+}

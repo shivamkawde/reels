@@ -1,0 +1,155 @@
+.video-container{
+    height: 90vh;
+    width: 100vw;
+    background: white;
+   scroll-snap-align: start;
+}
+.newpost{
+    position: relative;
+    left: 38%;
+    margin-top: 0px;
+    height: 60%;
+    width: 25%;
+    box-shadow: 1px 1px 5px grey;
+    background: white;
+}
+
+ /* .post{
+       height: 587px;
+    width: 325px;
+    position: relative;
+    left: 100px;
+}  */
+
+.logout-btn{
+    height: 44px;
+    position: fixed;
+    left: 90%;
+    top: 9%;
+    border-radius: 21px
+
+}
+.upload{
+    position: fixed;
+    left: 90%;
+    top: 9%;
+    height: 44px;
+    width: 5.5rem;
+    /* padding: 8px;
+    border-radius: 25px */
+
+}
+.likeCmt{
+    position: absolute;
+    left: 71%;
+    top: 68%;
+
+}
+.usenameReel{
+    position: absolute;
+    right: 250px;
+    top: 67px;
+    color:tomato
+
+}
+.song{
+    position: absolute;
+    right: 173px;
+    top: 41px;
+
+}
+.likeIcon{
+    position: absolute;
+    left: 4rem;
+    padding: 0px;
+    color: red;
+    text-align: center
+;
+
+}
+.cmtIcon{
+    position: absolute;
+    left: 4rem;
+    top: 50px;
+    color: red;
+
+}
+.cmtDiv{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ .posts-container{
+    scroll-snap-type: y mandatory;
+    position: absolute;
+    top: 14%;
+} 
+
+.cmtBox{
+    border: solid 1px;
+    height: auto;
+    width: 21rem;
+    background-color: whitesmoke;
+    position: absolute;
+    left: auto;
+    
+    top: 0;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+.cmtInput{
+    position: absolute;
+    top: 100%;
+    height: 52px;
+    width: 225px;
+    left: 0;
+    border: none;
+    margin-bottom: 4rem;
+}
+.cmtPostBtn{
+    position: absolute;
+    top: 100%;
+    height: 54px;
+    left: 226px;
+    width: 113px;
+    border: none;
+    margin-bottom: 4rem;
+
+}
+
+.profileImage{
+    height: 47px;
+    width: 47px;
+}
+.profileName{
+    color: red;
+    position: fixed;
+    left: 75rem;
+    bottom: 29rem;
+}
+.Linkusername{
+    position: absolute;
+    top: -2rem;
+    left: 3rem;
+}
+.wait{
+    position: relative;
+    top: 10rem;
+    left: 37rem;
+}
+
+
+ @media only screen and (max-width: 300px) {
+     .post{
+      width: 100%;
+    }
+    .video-container{
+        width: 100%;
+    }
+  } 

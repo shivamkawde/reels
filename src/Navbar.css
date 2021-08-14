@@ -1,0 +1,34 @@
+.container{
+    position: fixed;
+    height: 48px;
+    width: 100vw;
+    background: black;
+}
+
+
+.NavbarLink{
+    
+
+            
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 200px;
+    color:white ;
+    
+
+}
+
+a.activeLink{
+    color:  #c9344d;
+    border-bottom: 1px seashell;
+
+}
+@media only screen and (max-width: 600px) {
+
+    .container{
+        width: 600px;
+        
+    }
+}
