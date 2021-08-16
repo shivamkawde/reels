@@ -12,7 +12,7 @@ function Home() {
   let [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    firestore.collection("posts").onSnapshot((querySnapshot) => {
+    firestore.collection("posts").orderBy("time","desc").onSnapshot((querySnapshot) => {
       let arr = [];
       querySnapshot.forEach((doc) => {
         arr.push({ ...doc.data(), id: doc.id });
@@ -79,6 +79,7 @@ function Home() {
                     likes: 0,
                     uid: props.user.uid,
                     comments: [],
+                    time: new Date().toLocaleTimeString(),
                   });
                 });
               };

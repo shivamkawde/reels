@@ -12,7 +12,7 @@ function Newfeed() {
   let[Loding,setLoding]=useState(false);
 
   useEffect(() => {
-    firestore.collection("newfeedposts").onSnapshot((querySnapshot) => {
+    firestore.collection("newfeedposts").orderBy("time","desc").onSnapshot((querySnapshot) => {
       let arr = [];
       querySnapshot.forEach((doc) => {
         arr.push({ ...doc.data(), id: doc.id });
@@ -81,6 +81,7 @@ function Newfeed() {
                     uid:props.user.uid,
                     likes: 0,
                     comments: [],
+                    time: new Date().toLocaleTimeString(),
                   });
                 });
               };
