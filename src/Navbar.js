@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { someContext } from "./App1";
 import { auth, signInWithGoogle, firestore, storage } from "./firebase";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 function Navbar() {
   let props = useContext(someContext);

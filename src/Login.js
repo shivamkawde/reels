@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { signInWithGoogle, auth } from "./firebase";
 import { someContext } from "./App1";
 import { useEffect } from "react";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route } from "react-router-dom";
 function Login() {
   let props = useContext(someContext);
   console.log(props);

@@ -2,9 +2,9 @@ import { useRef } from "react";
 import { auth } from "./firebase";
 import "./Login.css";
 import { someContext } from "./App1";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { useState } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 function CreateAc() {
   let usehistory = useHistory();
   let [username, setUsername] = useState(null);

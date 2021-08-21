@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from './Login';
-import CreateAc from "./CreateAc"
+// import App from './App';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Login from './Login';
+// import CreateAc from "./CreateAc"
 
 
 import App1 from "./App1"
@@ -30,7 +30,7 @@ ReactDOM.render(
   //   </Switch>
   // </Router>
   
-  <App1></App1>
+  <App1/>
   ,
   document.getElementById('root')
 );

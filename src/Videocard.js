@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import "./Videocard.css";
 
 import { someContext } from "./App1";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { storage, firestore } from "./firebase";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 function Videocard(p) {
   let location = useHistory();
   let [boxOpen, setBoxOpen] = useState(false);

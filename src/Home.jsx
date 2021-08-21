@@ -1,7 +1,7 @@
 import "./Videocard.css";
 import { auth, signInWithGoogle, firestore, storage } from "./firebase";
 import Videocard from "./Videocard";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 import { someContext } from "./App1";
 import Navbar from "./Navbar";
 import { useContext, useEffect, useState } from "react";
@@ -12,7 +12,7 @@ function Home() {
   let [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    firestore.collection("posts").orderBy("time","desc").onSnapshot((querySnapshot) => {
+    firestore.collection("posts").onSnapshot((querySnapshot) => {
       let arr = [];
       querySnapshot.forEach((doc) => {
         arr.push({ ...doc.data(), id: doc.id });

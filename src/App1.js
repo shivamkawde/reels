@@ -5,13 +5,13 @@ import CreateAc from "./CreateAc";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import Newfeed from "./Newfeed";
-import { createContext } from "react/cjs/react.development";
+import { createContext } from "react";
 import { useState } from "react";
 import Profile from "./Profile"
 import Photos from "./Photos"
 import Otheruserprofile from "./Otheruserprofile"
 import Otheruserphotos from "./Otheruserphotos"
-let someContext = createContext();
+export let someContext = createContext();
 function App1() {
   let [user, setUser] = useState(null);
   let checkOnline = (user) => setUser(user);
@@ -67,4 +67,4 @@ function App1() {
   );
 }
 export default App1;
-export { someContext };
+// export { someContext };

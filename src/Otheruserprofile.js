@@ -1,7 +1,4 @@
-import {
-  useHistory,
-  useLocation,
-} from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory, useLocation } from "react-router-dom";
 import { firestore } from "./firebase";
 import { useState, useEffect, useContext } from "react";
 import { someContext } from "./App1";
@@ -99,6 +96,7 @@ function Otheruserprofile() {
           Photos
         </NavLink>
         <b
+          style={{ color: "blue" }}
           onClick={() => {
             if (chatBox) {
               setChatbox(false);
@@ -112,6 +110,13 @@ function Otheruserprofile() {
 
         {chatBox ? (
           <div className="messageBox">
+            <button
+              onClick={() => {
+                setChatbox(false);
+              }}
+            >
+              close
+            </button>
             {uiMessage.map((e) => {
               {
                 console.log(e.data.message);

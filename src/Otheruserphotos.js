@@ -1,5 +1,5 @@
 
-import { useHistory, useLocation } from "react-router-dom/cjs/react-router-dom.min"
+import { useHistory, useLocation } from "react-router-dom"
 import { firestore } from "./firebase";
 import{useState,useEffect} from "react"
 

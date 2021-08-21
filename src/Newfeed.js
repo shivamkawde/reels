@@ -1,7 +1,7 @@
 import "./Newfeed.css";
 import { auth, signInWithGoogle, firestore, storage } from "./firebase";
 import Newfeedcard from "./Newfeedcard";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 import { someContext } from "./App1";
 import Navbar from "./Navbar";
 import { useContext, useEffect, useState } from "react";
@@ -12,7 +12,7 @@ function Newfeed() {
   let[Loding,setLoding]=useState(false);
 
   useEffect(() => {
-    firestore.collection("newfeedposts").orderBy("time","desc").onSnapshot((querySnapshot) => {
+    firestore.collection("newfeedposts").onSnapshot((querySnapshot) => {
       let arr = [];
       querySnapshot.forEach((doc) => {
         arr.push({ ...doc.data(), id: doc.id });

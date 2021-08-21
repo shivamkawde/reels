@@ -14,7 +14,7 @@ import "firebase/storage"
 //   }
   // Initialize Firebase
   //firebase.initializeApp(firebaseConfig);
-// Your web app's Firebase configuration
+// Your web app's Firebase configufireration
 var firebaseConfig = {
   apiKey: "AIzaSyCLyLi5scMKPwq9UGXkIleFFCien72Sepk",
   authDomain: "instagram-868bc.firebaseapp.com",

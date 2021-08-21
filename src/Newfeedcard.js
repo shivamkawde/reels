@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import "./Newfeed.css";
 import { someContext } from "./App1";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { storage, firestore } from "./firebase";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 function Newfeedcard(p) {
 
   let location=useHistory()
